@@ -80,4 +80,9 @@ var getUserRepos = function (user) {
                 alert("Error: Github User Not Found");
             }
         })
+    
+        .catch(function (error) {
+            // notice this '.catch()' getting chained onto the '.then()' method
+            alert("unable to connect to GioHub");
+        });
     };
